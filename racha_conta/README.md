@@ -1,6 +1,6 @@
-# racha_conta
+# Racha Conta
 
-Um App responsavel por dividir a conta do bar entre os amigos
+Um App responsável por calcular a porcentagem do garçom que você desejar e ainda dividir o valor igualmente para cada um de seus amigos.
 
 ## Getting Started
 
