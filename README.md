@@ -2,7 +2,11 @@
 
 Repositório dedicado as tarefas desenvolvidas nas aulas de labortório de dispositivos móveis durante o segundo semestre de 2020;
 
-- ### [Racha Conta](https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis/tree/master/racha_conta)
+## APPs:
+-[Racha Conta](#Racha Conta)
+
+
+### [Racha Conta](https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis/tree/master/racha_conta)
 Um App desenvolvido com a motivação de dividir a conta entre amigos, após a ida no bar com a possibilidade de incluir a porcentagem do garçom no calculo.
 
 ![](/racha_conta/example/demo.gif)
