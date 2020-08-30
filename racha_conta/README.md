@@ -1,12 +1,12 @@
 # Racha Conta
 
-Um App responsável por calcular a porcentagem do garçom que você desejar e ainda dividir o valor igualmente para cada um de seus amigos utilizando flutter.
+Um App desenvolvido com a motivação de dividir a conta entre amigos, após a ida no bar com a possibilidade de incluir a porcentagem do garçom no calculo.
 
 ![](/racha_conta/example/demo.gif)
 
 #### Clonar repositório
 ```
-  git clone https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis.git
+git clone https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis.git
 ```
 
 ## Tecnologias utilizadas
