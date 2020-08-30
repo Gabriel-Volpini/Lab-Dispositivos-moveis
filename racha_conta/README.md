@@ -1,18 +1,27 @@
 # Racha Conta
 
-Um App responsável por calcular a porcentagem do garçom que você desejar e ainda dividir o valor igualmente para cada um de seus amigos.
+Um App responsável por calcular a porcentagem do garçom que você desejar e ainda dividir o valor igualmente para cada um de seus amigos utilizando flutter.
 
-## Getting Started
+![](/racha_conta/example/demo.gif)
 
-This project is a starting point for a Flutter application.
+#### Clonar repositório
+```
+  git clone https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis.git
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias utilizadas
 
+As principais aplicações utilizadas para o desenvolvimento desse app foram:
+
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/guides/language)
+- [Android Studio](https://developer.android.com/studio)
+
+### Referências e sites de consulta
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [flutter online documentation](https://flutter.dev/docs)
+- [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
-![] (/example/demo.gif)
+
