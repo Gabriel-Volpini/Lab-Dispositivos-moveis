@@ -2,6 +2,10 @@
 
 Um App desenvolvido com a motivação de dividir a conta entre amigos, após a ida no bar com a possibilidade de incluir a porcentagem do garçom no calculo.
 
+O aplicativo possui 3 campos de entrada de dados não nulos, e uma caixa de texto na parte superior, após inserir os valores no campos indicados e pressionar calcular a caixa de texto irá atualizar dizendo qual valor cada pessoa deve pagar para fechar a soma total da compra mais a gorjeta do garçom.
+
+Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado a padrões de projeto e interação com usuário.
+
 ![](/racha_conta/example/demo.gif)
 
 #### Clonar repositório
