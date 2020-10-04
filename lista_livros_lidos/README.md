@@ -6,7 +6,7 @@ O aplicativo possui um botão de adicionar livros no qual o usuario informa qual
 
 Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas e persistência de dados offline.
 
-<img src="/lista_livros_lidos/example/demo.gif" width="160" height="300"/>
+<img src="/lista_livros_lidos/example/demo.gif" width="150" height="330"/>
 
 
 #### Clonar repositório
