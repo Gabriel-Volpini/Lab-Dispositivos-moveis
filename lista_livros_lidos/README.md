@@ -1,4 +1,4 @@
-# Racha Conta
+# Lista lida
 
 Um App desenvolvido com a motivação de gerenciar em qual parte de cada livro você parou, dedicado a pessoas que gostam de ler varios livros ao mesmo tempo, e acabam se confundido em qual pagina de cada livro estão.
 
