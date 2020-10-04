@@ -4,7 +4,7 @@ Um App desenvolvido com a motivação de gerenciar em qual parte de cada livro v
 
 O aplicativo possui um botão de adicionar livros no qual o usuario informa qual o titulo do livro e qual pagina ele parou, após isso o app vai gerar e armazenar uma lista de livros e suas respectivas paginas.
 
-Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC e gerenciamento de listas.
+Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas e persistência de dados offline.
 
 ![](/racha_conta/example/demo.gif)
 
