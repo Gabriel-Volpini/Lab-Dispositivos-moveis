@@ -11,3 +11,8 @@ Um App desenvolvido com a motivação de dividir a conta entre amigos, após a i
 Um App desenvolvido com a motivação de ajudar a gerenciar livros que vocês está lendo e suas respectivas paginas.
 
 <img src="/lista_livros_lidos/example/demo.gif" width="150" height="330"/>
+
+- ### [Lista filmes para quarentena](https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis/tree/master/lista_filmes)
+Um App desenvolvido com a motivação salvar os filmes que te recomendaram para a quarentena.
+
+<img src="/lista_filmes/example/demo.gif" width="150" height="330"/>
