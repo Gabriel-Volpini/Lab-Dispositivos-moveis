@@ -1,8 +1,8 @@
-# Lista de filmes para quarentena
+# Lista lida
 
-Um App desenvolvido com a motivação de salvar os filmes indicado por amigos para esta epoca de quarentena.
+Um App desenvolvido com a motivação de gerenciar em qual parte de cada livro você parou, dedicado a pessoas que gostam de ler varios livros ao mesmo tempo, e acabam se confundido em qual pagina de cada livro estão.
 
-O aplicativo possui um botão de adicionar filmes no qual o usuario informa qual o titulo do filme e quem foi o responsável pela indicação, após isso o app vai gerar e armazenar uma lista de filmes com persistência de dados.
+O aplicativo possui um botão de adicionar livros no qual o usuario informa qual o titulo do livro e qual pagina ele parou, após isso o app vai gerar e armazenar uma lista de livros e suas respectivas paginas.
 
 Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas e persistência de dados offline.
 
