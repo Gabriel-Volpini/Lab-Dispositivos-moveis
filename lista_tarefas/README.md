@@ -6,7 +6,7 @@ O aplicativo possui um botão de adicionar tarefas no qual o usuario informa da 
 
 Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas , persistência de dados offline e maniplação de arquivos de banco de dados.
 
-<img src="/lista_filmes/example/demo.gif" width="150" height="330"/>
+<img src="/lista_tarefas/example/demo.gif" width="150" height="330"/>
 
 
 #### Clonar repositório
