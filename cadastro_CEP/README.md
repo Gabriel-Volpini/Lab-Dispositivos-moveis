@@ -2,9 +2,9 @@
 
 Um App desenvolvido com a motivação de pesquisar informações sobre um determinado CEP e salvar.
 
-O aplicativo possui um botão de cadastro de CEP onde o usuario consegue fazer a pesquisa do cep.
+O aplicativo possui um botão de cadastro de CEP onde o usuario consegue fazer a pesquisa do cep utilizando a api do [via cep](https://viacep.com.br/) , e após conferir os dados pode salva-los em uma base de dados hospedada no [firebase](https://firebase.google.com/).
 
-Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas e persistência de dados offline.
+Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como objetivo o estudo e o aprendizado relacionado ao padrão de projeto MVC, gerenciamento de listas, consumir dados de api's externas e o gerenciamento de dados em bancos de dados externos.
 
 <img src="/lista_filmes/example/demo.gif" width="150" height="330"/>
 
