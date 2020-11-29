@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1049769245729",
+    "firebase_url": "https://appflutter-13f2ca.firebaseio.com",
+    "project_id": "appflutter-13f2ca",
+    "storage_bucket": "appflutter-13f2ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049769245729:android:ac5a3fe76a52e426caf760",
+        "android_client_info": {
+          "package_name": "com.example.cadastro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049769245729-qrpohc3ki8ejgpbkpgdqkeqdnk9dm2ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoW9zTpSSFPppasCBahGlEymW3JJrRA6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049769245729-qrpohc3ki8ejgpbkpgdqkeqdnk9dm2ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
