@@ -1,7 +1,12 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:virtual_museu/screen/ImageView.dart';
+import 'package:virtual_museu/screen/FavoritesView.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:path_provider/path_provider.dart' as p;
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,8 +22,14 @@ class _HomePageState extends State<HomePage> {
         "https://api.harvardartmuseums.org/image?apikey=4e461967-72e1-4502-9f84-87622df7bc02");
     if (response.statusCode == 200) {
       var jsonResponse = json.decode(response.body);
+      var newFotos = jsonResponse['records'];
+
+      for (final f in newFotos) {
+        f['isEnable'] = false;
+      }
+
       setState(() {
-        fotos = jsonResponse['records'];
+        fotos = newFotos;
         info = jsonResponse['info'];
       });
     }
@@ -28,11 +39,45 @@ class _HomePageState extends State<HomePage> {
     var response = await http.get(info['next']);
     if (response.statusCode == 200) {
       var jsonResponse = json.decode(response.body);
+      var newFotos = jsonResponse['records'];
+
+      for (final f in newFotos) {
+        f['isEnable'] = false;
+      }
+
       setState(() {
-        fotos = jsonResponse['records'];
+        fotos = newFotos;
         info = jsonResponse['info'];
       });
     }
+  }
+
+  void addFavorite(String imageUrl, int imageId) async {
+    Directory documentDirectory = await p.getApplicationDocumentsDirectory();
+    String path = documentDirectory.path + 'database.db';
+
+    var database = await openDatabase(path,
+        version: 1, onUpgrade: (Database db, int version, int info) async {},
+        onCreate: (Database db, int version) async {
+      await db.execute(
+          "CREATE TABLE Favoritos (idFavorito integer primary key autoincrement, baseImageUrl TEXT, imageId INTEGER )");
+    });
+
+    await database.rawInsert(
+        "insert into Favoritos(baseImageUrl, imageId) values(?,?)",
+        [imageUrl, imageId]);
+
+    var newFotos = fotos;
+    for (final f in newFotos) {
+      if (f['imageid'] == imageId) {
+        f['isEnable'] = true;
+      }
+    }
+    setState(() {
+      fotos = newFotos;
+    });
+
+    await database.close();
   }
 
   @override
@@ -46,6 +91,19 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text("Museu virtual"),
         centerTitle: true,
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FavoritesView())),
+              child: Icon(
+                Icons.favorite,
+                color: Colors.white,
+              ),
+            ),
+          )
+        ],
       ),
       body: Scrollbar(
         child: ListView(
@@ -54,6 +112,13 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 title: Text("Imagem - ${fotos[i]['imageid']}"),
                 leading: Image.network(fotos[i]['baseimageurl'], width: 30),
+                trailing: IconButton(
+                    icon: Icon(
+                      Icons.favorite,
+                      color: fotos[i]['isEnable'] ? Colors.red : Colors.grey,
+                    ),
+                    onPressed: () => addFavorite(
+                        fotos[i]['baseimageurl'], fotos[i]['imageid'])),
                 onTap: () => Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -65,7 +130,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: goToNextPage,
-        child: Icon(Icons.arrow_forward),
+        child: Icon(Icons.cached),
       ),
     );
   }
