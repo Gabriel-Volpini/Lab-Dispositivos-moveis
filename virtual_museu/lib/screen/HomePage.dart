@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> getDataFromAPI() async {
     var response = await http.get(
-        "https://api.harvardartmuseums.org/image?apikey=4e461967-72e1-4502-9f84-87622df7bc02");
+        "https://api.harvardartmuseums.org/image?apikey=YOUR_API_KEY_HERE");
     if (response.statusCode == 200) {
       var jsonResponse = json.decode(response.body);
       var newFotos = jsonResponse['records'];
