@@ -20,6 +20,8 @@ Um App desenvolvido com a motivação salvar os filmes que te recomendaram para 
 - ### [Lista filmes para quarentena](https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis/tree/master/lista_tarefas)
 Um App desenvolvido com a motivação ajudar na gerencia de afazeres.
 
+<img src="/lista_tarefas/example/demo.gif" width="150" height="330"/>
+
 - ### [Gerenciador de endereços](https://github.com/Gabriel-Volpini/Lab-Dispositivos-moveis/tree/master/cadastro_CEP)
 Um App desenvolvido com a motivação ajudar na gerenciar endereços, pesquisando pelo cep e retornando suas informações.
 
