@@ -8,11 +8,14 @@ O app possui em seu arquivo [HomePage.dart](https://github.com/Gabriel-Volpini/L
 
 Este app foi feito utilizando a tecnologia [Flutter](https://flutter.dev/), Framework de desenvolvimento multiplataforma desenvolvido pela google. Este app tem como a realização do trabalho final da grade de Laboratório de dispositivos móveis, utilizando-se de gerenciamento de listas, consumir dados de api's externas e o gerenciamento de dados em bancos de dados interno para persistencia de dados.
 
-<img src="/cadastro_CEP/example/demo.gif" width="150" height="330"/>
+<img src="/virtual_museu/lib/examples/demo1.gif" width="150" height="330"/>
 
-Após esta inserção os dados são salvos no firebase conforme a imagem abaxo.
-<img src="/cadastro_CEP/example/firebase.png"/>
+Após favoritar suas imagens elas são salvas em um banco sqlite e podem ser exibidas e deletadas em uma tela de exclusiva para o gerenciamento dos favoritos.
 
+<img src="/virtual_museu/lib/examples/demo2.gif" width="150" height="330"/>
+
+## Problemas técnicos
+A api não disponibiliza informações precisas sobre as imagens como dscrição, nome da obra ou autor, e acabou que foi necessário utilizar o identificador unico como meio de diferenciar as imagens entre si.
 
 #### Clonar repositório
 ```
