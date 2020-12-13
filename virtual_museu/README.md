@@ -15,7 +15,7 @@ Após favoritar suas imagens elas são salvas em um banco sqlite e podem ser exi
 <img src="/virtual_museu/lib/examples/demo2.gif" width="150" height="330"/>
 
 ## Problemas técnicos
-A api não disponibiliza informações precisas sobre as imagens como dscrição, nome da obra ou autor, e acabou que foi necessário utilizar o identificador unico como meio de diferenciar as imagens entre si.
+A api não disponibiliza informações precisas sobre as imagens como a descrição, nome da obra ou autor, e acabou que foi necessário utilizar o identificador unico como meio de diferenciar as imagens entre si.
 
 ### Opiniões externas
 
